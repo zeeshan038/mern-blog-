@@ -85,46 +85,40 @@ const DashSidBar = () => {
             </Link>
             <Link
             to={"/post"}
-            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold hover:bg-gray-600 hover:text-white transition-all"
+            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold  transition-all"
           >
               Create Post
             
           </Link>
             <Link
               to={"/dashboard?tab=post"}
-              className="text-2xl mt-12 flex items-center justify-center font-bold hover:bg-white hover:text-black transition-all"
+              className="text-2xl mt-12 flex items-center justify-center font-bold transition-all"
               onClick={handleToggle}
             >
               Posts{" "}
-              <span className="ml-[75px] mt-1 text-3xl">
-                <MdPostAdd />
-              </span>
+              
             </Link>
             <Link
             to={"/dashboard?tab=comments"}
-            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold hover:bg-gray-600 hover:text-white transition-all"
+            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold transition-all"
           >
             Comments
             
           </Link>
           <Link
             to={"/dashboard?tab=user"}
-            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold hover:bg-gray-600 hover:text-white transition-all"
+            className="text-2xl mt-8 h-12 flex items-center justify-center font-bold  transition-all"
           >
             Users{" "}
-            <span className="ml-[75px] mt-1 text-3xl">
-              <MdPostAdd />
-            </span>
+          
           </Link>
             <Link
               to={"/signout"}
-              className="text-2xl mt-8 flex items-center justify-center font-bold hover:bg-white hover:text-black transition-all"
+              className="text-2xl mt-8 flex items-center justify-center font-bold transition-all"
               onClick={handleSignout}
             >
               Logout{" "}
-              <span className="ml-16 mt-1 text-3xl">
-                <PiSignOutBold />
-              </span>
+              
             </Link>
           </div>
         )}
